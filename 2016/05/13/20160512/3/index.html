@@ -5,26 +5,23 @@
   <meta charset="UTF-8">
   <meta name="baidu-site-verification" content="rVHpM4VvMp" />
   
-    <title>Java集合框架 | Happy coding</title>
+    <title>maven命令备忘录 | Happy coding</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="姚晋伟">
     
 
     
-    <meta name="description" content="经常有面试会问到类似的问题，总是回答不好，干脆集中时间对这个知识点进行了一下梳理。一方面真正的从原理上掌握这些类；另一方面学习这几个类的设计，提升编程能力。介绍Java集合类之前，先从一个比较的高的角度来了解一下这个框架。
-集合框架首先要明确，集合代表了一组对象（和数组一样，但数组长度不能变，而集合能）。Java中的集合框架定义了一套规范，用来表示、操作集合，使具体操作与实现细节解耦。 其实说白了">
+    <meta name="description" content="mvn help:describe你是否因为记不清某个插件有哪些goal而痛苦过,你是否因为想不起某个goal有哪些参数而苦恼,那就试试这个命令吧,它会告诉你一切的.参数: 1. -Dplugin=pluginName   2. -Dgoal(或-Dmojo)=goalName:与-Dplugin一起使用,它会列出某个插件的goal信息,如果嫌不够详细,同样可以加-Ddetail.(注:一个插件">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java集合框架">
-<meta property="og:url" content="http://yaojinwei.com/2016/05/13/20160512/2/index.html">
+<meta property="og:title" content="maven命令备忘录">
+<meta property="og:url" content="http://yaojinwei.com/2016/05/13/20160512/3/index.html">
 <meta property="og:site_name" content="Happy coding">
-<meta property="og:description" content="经常有面试会问到类似的问题，总是回答不好，干脆集中时间对这个知识点进行了一下梳理。一方面真正的从原理上掌握这些类；另一方面学习这几个类的设计，提升编程能力。介绍Java集合类之前，先从一个比较的高的角度来了解一下这个框架。
-集合框架首先要明确，集合代表了一组对象（和数组一样，但数组长度不能变，而集合能）。Java中的集合框架定义了一套规范，用来表示、操作集合，使具体操作与实现细节解耦。 其实说白了">
-<meta property="og:updated_time" content="2016-05-13T03:34:39.279Z">
+<meta property="og:description" content="mvn help:describe你是否因为记不清某个插件有哪些goal而痛苦过,你是否因为想不起某个goal有哪些参数而苦恼,那就试试这个命令吧,它会告诉你一切的.参数: 1. -Dplugin=pluginName   2. -Dgoal(或-Dmojo)=goalName:与-Dplugin一起使用,它会列出某个插件的goal信息,如果嫌不够详细,同样可以加-Ddetail.(注:一个插件">
+<meta property="og:updated_time" content="2016-05-13T11:14:19.458Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java集合框架">
-<meta name="twitter:description" content="经常有面试会问到类似的问题，总是回答不好，干脆集中时间对这个知识点进行了一下梳理。一方面真正的从原理上掌握这些类；另一方面学习这几个类的设计，提升编程能力。介绍Java集合类之前，先从一个比较的高的角度来了解一下这个框架。
-集合框架首先要明确，集合代表了一组对象（和数组一样，但数组长度不能变，而集合能）。Java中的集合框架定义了一套规范，用来表示、操作集合，使具体操作与实现细节解耦。 其实说白了">
+<meta name="twitter:title" content="maven命令备忘录">
+<meta name="twitter:description" content="mvn help:describe你是否因为记不清某个插件有哪些goal而痛苦过,你是否因为想不起某个goal有哪些参数而苦恼,那就试试这个命令吧,它会告诉你一切的.参数: 1. -Dplugin=pluginName   2. -Dgoal(或-Dmojo)=goalName:与-Dplugin一起使用,它会列出某个插件的goal信息,如果嫌不够详细,同样可以加-Ddetail.(注:一个插件">
 
     
     <link rel="alternative" href="/atom.xml" title="Happy coding" type="application/atom+xml">
@@ -97,14 +94,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2016/05/13/20160512/2/" title="Java集合框架" itemprop="url">Java集合框架</a>
+      <a href="/2016/05/13/20160512/3/" title="maven命令备忘录" itemprop="url">maven命令备忘录</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="姚晋伟" target="_blank" itemprop="author">姚晋伟</a>
 		
   <p class="article-time">
-    <time datetime="2016-05-13T03:34:28.000Z" itemprop="datePublished"> 发表于 2016-05-13</time>
+    <time datetime="2016-05-13T11:12:28.000Z" itemprop="datePublished"> 发表于 2016-05-13</time>
     
   </p>
 </header>
@@ -113,26 +110,64 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#集合框架"><span class="toc-number">1.</span> <span class="toc-text">集合框架</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#设计理念"><span class="toc-number">2.</span> <span class="toc-text">设计理念</span></a></li></ol>
+			
 		
 		</div>
 		
-		<p>经常有面试会问到类似的问题，总是回答不好，干脆集中时间对这个知识点进行了一下梳理。一方面真正的从原理上掌握这些类；另一方面学习这几个类的设计，提升编程能力。<br>介绍Java集合类之前，先从一个比较的高的角度来了解一下这个框架。</p>
-<h1 id="集合框架"><a href="#集合框架" class="headerlink" title="集合框架"></a>集合框架</h1><p>首先要明确，集合代表了一组对象（和数组一样，但数组长度不能变，而集合能）。Java中的集合框架定义了一套规范，用来表示、操作集合，使具体操作与实现细节解耦。 其实说白了，可以把一个集合看成一个微型数据库，操作不外乎“增删改查”四种操作，我们在学习使用一个具体的集合类时，需要把这四个操作的时空复杂度弄清楚了，基本上就可以说掌握这个类了。</p>
-<h1 id="设计理念"><a href="#设计理念" class="headerlink" title="设计理念"></a>设计理念</h1>  
+		<ol>
+<li><p>mvn help:describe<br>你是否因为记不清某个插件有哪些goal而痛苦过,你是否因为想不起某个goal有哪些参数而苦恼,那就试试这个命令吧,它会告诉你一切的.<br>参数: 1. -Dplugin=pluginName   2. -Dgoal(或-Dmojo)=goalName:与-Dplugin一起使用,它会列出某个插件的goal信息,<br>如果嫌不够详细,同样可以加-Ddetail.(注:一个插件goal也被认为是一个 “Mojo”)<br>下面大家就运行mvn help:describe -Dplugin=help -Dmojo=describe感受一下吧!</p>
+</li>
+<li><p>mvn archetype:generate<br>你是怎么创建你的maven项目的?是不是像这样:mvn archetype:create -DarchetypeArtifactId=maven-archetype-quickstart -DgroupId=com.ryanote -Dartifact=common,<br>如果你还再用的话,那你就out了,现代人都用mvn archetype:generate了,它将创建项目这件枯燥的事更加人性化,你再也不需要记那么多的archetypeArtifactId,你只需输入archetype:generate,剩下的就是做”选择题”了.</p>
+</li>
+<li><p>mvn tomcat:run<br>用了maven后,你再也不需要用eclipse里的tomcat来运行web项目(实际工作中经常会发现用它会出现不同步更新的情况),只需在对应目录里运行 mvn tomat:run命令,<br>然后就可在浏览器里运行查看了.如果你想要更多的定制,可以在pom.xml文件里加下面配置:<br>01 02 03 04 org.codehaus.mojo 05 tomcat-maven-plugin 06 07 /web 08 9090 09 10 11 12 当然你也可以在命令里加参数来实现特定的功能,<br>下面几个比较常用:</p>
+</li>
+<li>跳过测试:-Dmaven.test.skip(=true)</li>
+<li>指定端口:-Dmaven.tomcat.port=9090</li>
+<li><p>忽略测试失败:-Dmaven.test.failure.ignore=true 当然,如果你的其它关联项目有过更新的话,一定要在项目根目录下运行mvn clean install来执行更新,再运行mvn tomcat:run使改动生效.</p>
+</li>
+<li><p>mvnDebug tomcat:run<br>这条命令主要用来远程测试,它会监听远程测试用的8000端口,在eclipse里打开远程测试后,它就会跑起来了,设断点,调试,一切都是这么简单.上面提到的那几个参数在这里同样适用.</p>
+</li>
+<li><p>mvn dependency:sources<br>故名思义,有了它,你就不用到处找源码了,运行一下,你项目里所依赖的jar包的源码就都有了</p>
+</li>
+</ol>
+<p>Maven常用命令：</p>
+<ol>
+<li>创建Maven的普通java项目：<br>mvn archetype:create  -DgroupId=packageName  -DartifactId=projectName</li>
+<li>创建Maven的Web项目：<br> mvn archetype:create -DgroupId=packageName   -DartifactId=webappName-DarchetypeArtifactId=maven-archetype-webapp</li>
+<li>编译源代码： mvn compile</li>
+<li>编译测试代码：mvn test-compile</li>
+<li>运行测试：mvn test</li>
+<li>产生site：mvn site</li>
+<li>打包：mvn package</li>
+<li>在本地Repository中安装jar：mvn install</li>
+<li>清除产生的项目：mvn clean</li>
+<li>生成eclipse项目：mvn eclipse:eclipse</li>
+<li>生成idea项目：mvn idea:idea</li>
+<li>组合使用goal命令，如只打包不测试：mvn -Dtest package</li>
+<li>编译测试的内容：mvn test-compile</li>
+<li>只打jar包: mvn jar:jar</li>
+<li>只测试而不编译，也不测试编译：mvn test -skipping compile -skipping test-compile<br>  ( -skipping 的灵活运用，当然也可以用于其他组合命令)</li>
+<li>清除eclipse的一些系统设置:mvn eclipse:clean<br>ps：<br>一般使用情况是这样，首先通过cvs或svn下载代码到本机，然后执行mvn eclipse:eclipse生成ecllipse项目文件，然后导入到eclipse就行了；修改代码后执行mvn compile或mvn test检验，也可以下载eclipse的maven插件。<br>mvn -version/-v               显示版本信息<br>mvn archetype:generate        创建mvn项目<br>mvn archetype:create -DgroupId=com.oreilly -DartifactId=my-app   创建mvn项目<br>mvn package              生成target目录，编译、测试代码，生成测试报告，生成jar/war文件<br>mvn jetty:run            运行项目于jetty上,<br>mvn compile              编译<br>mvn test                 编译并测试<br>mvn clean                清空生成的文件<br>mvn site                 生成项目相关信息的网站<br>mvn -Dwtpversion=1.0 eclipse:eclipse        生成Wtp插件的Web项目<br>mvn -Dwtpversion=1.0 eclipse:clean          清除Eclipse项目的配置信息(Web项目)<br>mvn eclipse:eclipse                         将项目转化为Eclipse项目<br>在应用程序用使用多个存储库<repositories><br><repository><br>    <id>Ibiblio</id><br>    <name>Ibiblio</name><br>    <url><a href="http://www.ibiblio.org/maven/" target="_blank" rel="external">http://www.ibiblio.org/maven/</a></url><br></repository><br><repository><br>    <id>PlanetMirror</id><br>    <name>Planet Mirror</name><br>    <url><a href="http://public.planetmirror.com/pub/maven/" target="_blank" rel="external">http://public.planetmirror.com/pub/maven/</a></url><br></repository><br></repositories>
+
+</li>
+</ol>
+<p>mvn deploy:deploy-file -DgroupId=com -DartifactId=client -Dversion=0.1.0 -Dpackaging=jar -Dfile=d:\client-0.1.0.jar -DrepositoryId=maven-repository-inner -Durl=ftp://xxxxxxx/opt/maven/repository/</p>
+<p>发布第三方Jar到本地库中：<br>mvn install:install-file -DgroupId=com -DartifactId=client -Dversion=0.1.0 -Dpackaging=jar -Dfile=d:\client-0.1.0.jar</p>
+<p>-DdownloadSources=true<br>-DdownloadJavadocs=true<br>mvn -e              显示详细错误 信息.<br>mvn validate        验证工程是否正确，所有需要的资源是否可用。<br>mvn test-compile    编译项目测试代码。 。<br>mvn integration-test     在集成测试可以运行的环境中处理和发布包。<br>mvn verify               运行任何检查，验证包是否有效且达到质量标准。<br>mvn generate-sources     产生应用需要的任何额外的源代码，如xdoclet。</p>
+  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
 <div class="article-categories">
   <span></span>
-  <a class="article-category-link" href="/categories/编程语言/">编程语言</a>
+  <a class="article-category-link" href="/categories/开发工具/">开发工具</a>
 </div>
 
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/java/">java</a>
+  <span></span> <a href="/tags/maven/">maven</a>
   </div>
 
 </div>
@@ -141,7 +176,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://yaojinwei.com/2016/05/13/20160512/2/" data-title="Java集合框架 | Happy coding" data-tsina="2058753891" class="share clearfix">
+	  <div data-url="http://yaojinwei.com/2016/05/13/20160512/3/" data-title="maven命令备忘录 | Happy coding" data-tsina="2058753891" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -154,19 +189,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2016/05/13/20160512/3/" title="maven命令备忘录">
-  <strong>上一篇：</strong><br/>
-  <span>
-  maven命令备忘录</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2016/05/12/20160512/"  title="新的开始">
+<a href="/2016/05/13/20160512/2/"  title="Java集合框架">
  <strong>下一篇：</strong><br/> 
- <span>新的开始
+ <span>Java集合框架
 </span>
 </a>
 </div>
@@ -175,7 +202,7 @@
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="2016/05/13/20160512/2/" data-title="Java集合框架" data-url="http://yaojinwei.com/2016/05/13/20160512/2/"></div>
+	<div class="ds-thread" data-thread-key="2016/05/13/20160512/3/" data-title="maven命令备忘录" data-url="http://yaojinwei.com/2016/05/13/20160512/3/"></div>
 </section>
 
 
@@ -185,7 +212,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#集合框架"><span class="toc-number">1.</span> <span class="toc-text">集合框架</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#设计理念"><span class="toc-number">2.</span> <span class="toc-text">设计理念</span></a></li></ol>
+ 
  
   </div>
 
